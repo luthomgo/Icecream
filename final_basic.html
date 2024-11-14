@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice cream</title>
+
+    <style>
+      body {
+        color: #7a003d;
+      }
+
+      h1 {
+        margin: 0 auto;
+        font-size: 75px;
+        color: #7a003d;
+        text-align: center;
+        font-weight: bolder;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      hr {
+        width: 70%;
+        box-shadow: 2px 2px 4px #c3195d;
+      }
+
+      a {
+        text-decoration: none;
+        color: #c3195d;
+        font-weight: 600;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 27px;
+        box-shadow: 4px 4px 15px #c3195d;
+        border: 5px solid #7a003d;
+        background: transparent;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: #7a003d;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+        max-width: 100%;
+      }
+
+      .flavour {
+        color: #c3195d;
+        line-height: 15px;
+      }
+
+      .personality{
+        color: #c3195d;
+        padding: 5px;
+      }
+
+      .container {
+        background: linear-gradient(65deg, #faa9e0 0%, #da6ef5 100%);
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        padding: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Ice Cream</h1>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/256/original/2-Ingredient-Ice-cream-Thumbnail-scaled.jpg?1727381192"
+        alt="six cup filled with ice cream"
+        width="500"
+      />
+      <p>
+        Ice cream is more than just a frozen treat; it's an adventure in a cone
+        or
+        <br />
+        cup! Each creamy scoop is a world of flavor, from the classic sweetness
+        of
+        <br />
+        vanilla to exotic blends like lavender honey or salted caramel. The
+        magic
+        <br />
+        lies in the way it melts on your tongue, delivering cool waves of
+        sweetness <br />
+        that can instantly uplift your mood. Whether it's a simple soft-serve on
+        a
+        <br />
+        hot day or a gourmet sundae topped with fresh fruit, nuts, and chocolate
+        drizzle, ice cream has the unique ability to bring people together and
+        spark <br />
+        joy. Plus, the endless variety—from vegan options to indulgent gelato
+        <br />
+        makes it the perfect dessert for any palate!
+      </p>
+
+      <h2>Different flavor</h2>
+      <ol>
+        <li>
+          <span class="flavour"><b>Classic Vanilla - </b></span> Smooth and
+          timeless, a universal favorite that pairs perfectly with any topping.
+        </li>
+        <li>
+          <span class="flavour"><b>Rich Chocolate Fudge –</b></span> Decadent
+          and indulgent, perfect for chocolate lovers who crave bold, deep
+          flavors.
+        </li>
+        <li>
+          <span class="flavour"><b>Salted Caramel –</b></span> A luxurious blend
+          of sweet and salty, with a buttery finish that melts in your mouth.
+        </li>
+        <li>
+          <span class="flavour"><b>Mint Chocolate Chip –</b></span> Refreshingly
+          cool with a delightful crunch from the chocolate pieces, perfect for a
+          crisp treat.
+        </li>
+        <li>
+          <span class="flavour"><b>Cookies and Cream –</b></span> Crushed
+          cookies swirled in creamy vanilla, offering a satisfying combination
+          of textures.
+        </li>
+        <li>
+          <span class="flavour"><b>Pistachio –</b></span> Nutty, subtle, and
+          sophisticated, with a delicate sweetness that lingers on your palate.
+        </li>
+        <li>
+          <span class="flavour"><b>Coffee Espresso –</b></span> A caffeinated
+          dream, with bold coffee flavors that give you a little kick with each
+          scoop.
+        </li>
+        <li>
+          <span class="flavour"><b>Mango Sorbet –</b></span> Light, refreshing,
+          and tropical, it’s a fruity burst of sunshine in every bite.
+        </li>
+        <li>
+          <span class="flavour"><b>Cookie Dough –</b></span> Packed with chunks
+          of gooey, soft cookie dough for the ultimate nostalgic indulgence.
+        </li>
+        <li>
+          <span class="flavour"><b>Strawberry Cheesecake –</b></span> Creamy
+          cheesecake bites and fresh strawberry swirls for a rich, fruity twist.
+        </li>
+      </ol>
+
+      <p>
+        Ready to discover your next favorite flavor? There's a world of ice
+        cream waiting for you to
+        <a href="https://en.wikipedia.org/wiki/Ice_cream"><em>explore!</em></a>
+        🍨
+      </p>
+
+        <div class="personality">
+        <strong
+          >Discover what your favorite ice cream flavor reveals about your
+          personality! 🍦</strong
+        >
+        </div>
+
+
+      <button>Pick Your Dream Flavor personality!</button>
+    </div>
+
+    <script>
+      function iceCreamFlavour() {
+        let name = prompt("What is your name?");
+        let iceCream = prompt("What's your favorite flavor?");
+
+        if (iceCream === "vanilla") {
+          alert(
+            `${name} You’re classic, timeless, and love simplicity. You value tradition and have a calm, comforting presence. People appreciate your reliability and down-to-earth nature.`
+          );
+        } else if (iceCream === "chocolate fudge") {
+          alert(
+            `${name} Bold and passionate, you live life with intensity. You’re adventurous and love indulging in rich experiences. Your dynamic personality draws others in, and you're not afraid to take risks.`
+          );
+        } else if (iceCream === "salted caramel") {
+          alert(
+            `${name} you’re a perfect blend of sophistication and fun. You enjoy life’s little surprises and have a taste for the finer things, with just the right touch of spontaneity!`
+          );
+        } else if (iceCream === "Mint chocolate chip") {
+          alert(
+            `${name} You’re cool, confident, and refreshing. You like to stand out from the crowd, often surprising others with your sharp wit and playful energy`
+          );
+        } else if (iceCream === "cookies and cream") {
+          alert(
+            `${name} You’re a natural leader with a fun, approachable personality. People love your blend of lightheartedness and sense of responsibility. You strike the perfect balance between work and play.`
+          );
+        } else if (iceCream === "pistachio") {
+          alert(
+            `${name} You’re unique, quirky, and often mysterious. People admire your unconventional approach to life and your ability to remain calm and collected, even in unusual situations.`
+          );
+        } else if (iceCream === "coffee Espresso") {
+          alert(
+            `${name} You’re driven, ambitious, and always on the go. You have a sharp mind and a natural curiosity, constantly seeking new knowledge and experiences to fuel your passions.`
+          );
+        } else if (iceCream === "mango sorbet") {
+          alert(
+            `${name} You’re vibrant, optimistic, and full of energy. Your lively personality brings sunshine wherever you go, and people admire your carefree spirit and zest for life.`
+          );
+        } else if (iceCream === "cookie dough") {
+          alert(
+            `${name} You’re fun-loving, spontaneous, and a bit nostalgic. You love indulging your inner child and making the most of every moment. You’re always up for a new adventure and finding joy in life’s simple pleasures.`
+          );
+        } else if (iceCream === "strawberry cheesecake") {
+          alert(
+            `${name} You’re sweet, thoughtful, and tend to wear your heart on your sleeve. You’re also creative and love to express yourself through vibrant, joyful moments.`
+          );
+        } else {
+          alert(
+            `Oh no! Looks like we don’t have ${iceCream}. But don’t worry—there are plenty of other delicious options to explore! Give another flavor a try, and it might just become your new favorite! 😊`
+          );
+        }
+      }
+      let flavorButton = document.querySelector("button");
+      flavorButton.addEventListener("click", iceCreamFlavour);
+    </script>
+  </body>
+</html>
